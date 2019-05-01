@@ -1,0 +1,23 @@
+# Set the topmost directory for searching editorconfig files
+root = true
+
+# Config for all file types
+[**]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Config for html files
+[**.html]
+indent_size = 2
+
+# Config for css, less, sass and scss files
+[**.{css, less, sass, scss}]
+indent_size = 2
+
+# Config for package.json
+[package.*.json]
+indent_size = 2
