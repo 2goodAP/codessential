@@ -1,2 +1,2 @@
-const {editor} = require('./editor');
+import {editor} from './editor';
 
