@@ -3,12 +3,51 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../dist/app.bundle.js"></script>
+    <script src="../node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="../node_modules/codemirror/mode/javascript/javascript.js"></script>
     <link rel="stylesheet" href="./node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+      body {
+        background-color: #000;
+        color: #eee;
+      }
+      h1 {
+        color: #ff8a00;
+        font-family: raleway;
+      }
+      button {
+        border-width: 2px;
+        border-radius: 20px;
+        text-align: right;
+        margin-top: 1%;
+        padding: 2%;
+        color: #fff;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #ff8a00, #da1b60);
+      }
+      button:hover {
+        border-color: #fff;
+        border-width: 3px;
+      }
+    </style>
     <title>Welcome to Codessential</title>
   </head>
   <body>
-    <h1>Go ahead, type in some code</h1>
+    <h1>Codessential</h1>
+    <h2>Go ahead, type in some code</h2>
     <textarea id="codeditor" rows="10" cols="300"></textarea>
+    <div id="button">
+      <button onclick="compile()">Compile and Run</button>
+    </div>
   </body>
+  <script>
+    function compile() {
+      let compileButton = document.getElementById('button');
+      console.log(compileButton);
+      let para = document.createElement('p');
+      para.appendChild(document.createTextNode('Successfully Compiled'));
+      compileButton.appendChild(para);
+    }
+  </script>
 </html>
