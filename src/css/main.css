@@ -1,4 +1,5 @@
 @import '../../node_modules/codemirror/theme/monokai.css';
+@import '../../node_modules/codemirror/theme/mdn-like.css';
 
 body { background-color: #20262e; }
 header { padding: 1.25em; }
@@ -32,18 +33,18 @@ h1 {
   position: absolute;
   z-index: 5;
   top: 5px;
-  left: 25%;
+  left: -100%;
   display: inline-block;
   /* overflow: auto; */
 
   padding: 2% 10%;
   border-radius: 10px 0 0 10px;
   background: #fff;
-  color: #999;
+  color: #222;
 
   text-transform: capitalize;
 }
-.popup .popup-content h3 { font-size: 1.15em; }
+.popup .popup-content h3 { font-size: 1em; }
 /* The popup arrow*/
 .popup .popup-content:after {
   content: "";
@@ -61,4 +62,8 @@ h1 {
   font-weight: normal;
   text-transform: capitalize;
   color: #000;
+}
+.popup-option .fa-toggle-off {
+  font-size: 20px;
+  color: grey;
 }

@@ -19,16 +19,8 @@ let popup = document.querySelector('.popup');
 let settings = document.querySelector('.settings');
 
 function showPopup(event) {
-    // popup.style.top = `${settings
-    //         .getBoundingClientRect().top + pageYOffset
-    //         + settings.offsetHeight}px`;
-    // popup.style.left = `${settings
-    //         .getBoundingClientRect().left + pageXOffset
-    //         + settings.offsetWidth / 4}px`;
     popup.style.display = 'block';
-
     settings.addEventListener('blur', () => {
-        // settings.removeEventListener('focus', showpopup);
         popup.style.display = 'none';
     });
     settings.appendChild(popup);
@@ -36,6 +28,15 @@ function showPopup(event) {
 
 settings.addEventListener('focus', showPopup);
 
-// Hover effects on tooltip
-//
+// Theming
+let theme = document.querySelector('.theme');
 
+theme.addEventListener('click', toggleTheme);
+
+function toggleTheme(event) {
+    if (event.target.textContent.toLowerCase() == 'lightness') {
+        editor.setOption('theme', 'mdn-like');
+    } else if (event.target.textContent.toLowerCase() == 'darkness') {
+        editor.setOption('theme', 'monokai');
+    }
+}
