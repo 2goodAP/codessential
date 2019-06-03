@@ -15,11 +15,7 @@ function createElt(nodeName, attrs, ...children) {
     return node;
 }
 
-let popup = createElt('div', {
-    class: 'popup',
-}, createElt('div', {
-    class: 'popup-content',
-}, document.createTextNode('popup')));
+let popup = document.querySelector('.popup');
 let settings = document.querySelector('.settings');
 
 function showPopup(event) {
@@ -39,3 +35,7 @@ function showPopup(event) {
 }
 
 settings.addEventListener('focus', showPopup);
+
+// Hover effects on tooltip
+//
+

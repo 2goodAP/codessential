@@ -31,24 +31,34 @@ h1 {
 .popup .popup-content {
   position: absolute;
   z-index: 5;
-  /* top: 6px; */
+  top: 5px;
   left: 25%;
   display: inline-block;
-  overflow: auto;
+  /* overflow: auto; */
 
-  padding: 2% 3%;
-  border: 1px solid red;
+  padding: 2% 10%;
   border-radius: 10px 0 0 10px;
   background: #fff;
-  color: #000;
+  color: #999;
+
+  text-transform: capitalize;
 }
+.popup .popup-content h3 { font-size: 1.15em; }
 /* The popup arrow*/
-.popup:before {
+.popup .popup-content:after {
   content: "";
   position: absolute;
+  top: -10px;
   left: 50%;
 
-  border-width: 25px;
+  border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent red transparent;
+  border-color: transparent transparent #fff transparent;
+}
+
+/* Popup header */
+.popup-option {
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #000;
 }
