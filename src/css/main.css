@@ -1,2 +1,54 @@
 @import '../../node_modules/codemirror/theme/monokai.css';
 
+body { background-color: #20262e; }
+header { padding: 1.25em; }
+h1 {
+  font-size: 1.5em;
+  color: #fff;
+}
+/* .background */
+.drawer h2, .output h2 {
+  font-size: 1.1em;
+  text-align: center;
+  color: #eee;
+}
+.drawer {
+  background: #272822;
+  padding: .5em;
+}
+.output {
+  background: #272822;
+  padding: .5em;
+}
+
+.button { color: #bbb; }
+.button:focus, .button:hover { color: #ddd; }
+
+.popup {
+  display: none;
+  position: relative;
+}
+.popup .popup-content {
+  position: absolute;
+  z-index: 5;
+  /* top: 6px; */
+  left: 25%;
+  display: inline-block;
+  overflow: auto;
+
+  padding: 2% 3%;
+  border: 1px solid red;
+  border-radius: 10px 0 0 10px;
+  background: #fff;
+  color: #000;
+}
+/* The popup arrow*/
+.popup:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+
+  border-width: 25px;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+}
