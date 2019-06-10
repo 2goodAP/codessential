@@ -1,23 +1,24 @@
 @import '../../node_modules/codemirror/theme/monokai.css';
 @import '../../node_modules/codemirror/theme/mdn-like.css';
 
-body { background-color: #20262e; }
+body { color: #fff; background-color: #20262e; }
 header { padding: 1.25em; }
 h1 {
   font-size: 1.5em;
-  color: #fff;
 }
+.codessential { display: none; }
 /* .background */
 .drawer h2, .output h2 {
   font-size: 1.1em;
   text-align: center;
-  color: #eee;
 }
 .drawer {
+  color: #fff;
   background: #272822;
   padding: .5em;
 }
 .output {
+  color: #fff;
   background: #272822;
   padding: .5em;
 }
@@ -25,6 +26,7 @@ h1 {
 .button { color: #bbb; }
 .button:focus, .button:hover { color: #ddd; }
 
+/* The popup */
 .popup {
   display: none;
   position: relative;
@@ -35,10 +37,12 @@ h1 {
   top: 5px;
   left: -100%;
   display: inline-block;
+  box-shadow: -2px -2px 5px #232931, 2px -2px 5px #232931,
+              -2px 2px 5px #232931, 2px 2px 5px #232931;
   /* overflow: auto; */
 
   padding: 2% 10%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 5px 0 0 5px;
   background: #fff;
   color: #222;
 
