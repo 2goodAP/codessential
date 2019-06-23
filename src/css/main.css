@@ -8,7 +8,7 @@ h1 {
 }
 .codessential { display: none; }
 /* .background */
-.drawer h2, .output h2 {
+.drawer h2, .output-container h2 {
   font-size: 1.1em;
   text-align: center;
 }
@@ -17,7 +17,7 @@ h1 {
   background: #272822;
   padding: .5em;
 }
-.output {
+.output-container {
   color: #fff;
   background: #272822;
   padding: .5em;
