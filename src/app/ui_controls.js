@@ -12,7 +12,7 @@ export function showPopup(settings, popup) {
 
 export function toggleTheme(event) {
     let drawer = document.querySelector('.drawer');
-    let output = document.querySelector('.output');
+    let output = document.querySelector('.output-container');
     let popupContent = document.querySelector('.popup-content');
     if (event.target.textContent.toLowerCase() == 'lightness') {
         editor.setOption('theme', 'mdn-like');
@@ -27,7 +27,7 @@ export function toggleTheme(event) {
                                         -2px 2px 5px #dbdee1,
                                         2px 2px 5px #dbdee1`;
     } else if (event.target.textContent.toLowerCase() == 'darkness') {
-        editor.setOption('theme', 'monokai');
+        editor.setOption('theme', 'railscasts');
         document.body.style.background = '#20262e';
         document.body.style.color = '#fff';
         drawer.style.background = '#272822';

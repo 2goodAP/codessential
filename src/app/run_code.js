@@ -35,8 +35,8 @@ function createCodeFile(req, callback) {
 
 function sendOutput(res, callback) {
     res.writeHead(200, {
-        'Content-Type': 'text/plain',
-        'Access-Control-Allow-Origin': 'http://localhost:8080'
+        'Access-Control-Allow-Origin': 'http://localhost:8080',
+        'Content-Type': 'text/plain'
     });
     let nodeOnCode = execFile('node', ['codeFile.js'], {timeout: 500},
         (err, stdout, stderr) => {
