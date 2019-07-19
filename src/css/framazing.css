@@ -15,11 +15,12 @@ time, mark, audio, video {
 /* The Grid
  * ––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-	position: relative;
+   position: relative;
 	max-width: 1200px;
 	padding: 0 0.625rem;
-	margin: 0 auto;
+  margin: 0 auto;
 }
+
 .row:after,
 .container:after {
 	content: "";
