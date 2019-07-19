@@ -1,23 +1,12 @@
 {
-  "name": "codessential",
+  "name": "Shirish-codessential",
   "version": "1.0.0",
-  "description": "An elegant online IDE",
-  "private": true,
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --progress --config webpack.prod.js",
-    "start": "webpack-dev-server --config webpack.dev.js --open"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/2goodAP/codessential.git"
-  },
-  "keywords": [
-    "js",
-    "IDE",
-    "codemirror"
-  ],
+  "keywords": [],
   "author": "",
   "license": "GPL-3.0-or-later",
   "bugs": {
