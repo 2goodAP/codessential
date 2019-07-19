@@ -13,7 +13,7 @@
         <h1 class="codessential">Codessential</h1>
       </section>
       <div class="btn-container eight columns">
-        <button class="button-primary">
+        <button class="button-primary run">
           <i class="fas fa-play"></i> Run
         </button>
         <button class="button settings">
@@ -39,10 +39,15 @@
         <div class="row">Files</div>
       </section>
       <div class="text-editor six columns">
-        <textarea id="codeditor" rows="10"></textarea>
+        <form method="post">
+          <textarea class="codeditor" rows="10"></textarea>
+        </form>
       </div>
-      <section class="output four columns">
+      <section class="output-container four columns">
         <h2>OUTPUT</h2>
+        <code class="output">
+          Go ahead, feed the editor some code...
+        </code>
       </section>
     </main>
   </body>

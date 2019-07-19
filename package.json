@@ -46,6 +46,8 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "codemirror": "^5.46.0"
+    "child-process": "^1.0.2",
+    "codemirror": "^5.46.0",
+    "concat-stream": "^2.0.0"
   }
 }

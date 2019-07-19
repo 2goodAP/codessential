@@ -1,5 +1,6 @@
-@import '../../node_modules/codemirror/theme/monokai.css';
+@import '../../node_modules/codemirror/theme/railscasts.css';
 @import '../../node_modules/codemirror/theme/mdn-like.css';
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
 
 body { color: #fff; background-color: #20262e; }
 header { padding: 1.25em; }
@@ -8,19 +9,26 @@ h1 {
 }
 .codessential { display: none; }
 /* .background */
-.drawer h2, .output h2 {
+.drawer h2, .output-container h2 {
   font-size: 1.1em;
   text-align: center;
 }
-.drawer {
+.drawer, .output-container {
   color: #fff;
   background: #272822;
   padding: .5em;
+  border-radius: 5px;
+}
+.CodeMirror {
+  font: 14px 'Fira Code', monospace;
 }
 .output {
-  color: #fff;
-  background: #272822;
-  padding: .5em;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ddd;
+  background: #000;
+  font: 14px 'Fira Mono', monospace;
 }
 
 .button { color: #bbb; }
