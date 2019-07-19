@@ -8,15 +8,35 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/2goodAP/codessential/issues"
+  },
+  "homepage": "https://github.com/2goodAP/codessential#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "tar": ">=4.4.8",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
+  },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.4",
-    "ejs": "^2.6.1",
-    "express": "^4.17.1",
-    "md5": "^2.2.1",
-    "mysql": "^2.17.1",
-    "nodemon": "^1.19.1",
-    "path": "^0.12.7"
+    "child-process": "^1.0.2",
+    "codemirror": "^5.46.0",
+    "concat-stream": "^2.0.0"
   }
 }

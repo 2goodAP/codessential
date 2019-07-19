@@ -1,0 +1,81 @@
+@import '../../node_modules/codemirror/theme/railscasts.css';
+@import '../../node_modules/codemirror/theme/mdn-like.css';
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
+
+body { color: #fff; background-color: #20262e; }
+header { padding: 1.25em; }
+h1 {
+  font-size: 1.5em;
+}
+.codessential { display: none; }
+/* .background */
+.drawer h2, .output-container h2 {
+  font-size: 1.1em;
+  text-align: center;
+}
+.drawer, .output-container {
+  color: #fff;
+  background: #272822;
+  padding: .5em;
+  border-radius: 5px;
+}
+.CodeMirror {
+  font: 14px 'Fira Code', monospace;
+}
+.output {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ddd;
+  background: #000;
+  font: 14px 'Fira Mono', monospace;
+}
+
+.button { color: #bbb; }
+.button:focus, .button:hover { color: #ddd; }
+
+/* The popup */
+.popup {
+  display: none;
+  position: relative;
+}
+.popup .popup-content {
+  position: absolute;
+  z-index: 5;
+  top: 5px;
+  left: -100%;
+  display: inline-block;
+  box-shadow: -2px -2px 5px #232931, 2px -2px 5px #232931,
+              -2px 2px 5px #232931, 2px 2px 5px #232931;
+  /* overflow: auto; */
+
+  padding: 2% 10%;
+  border-radius: 5px 0 0 5px;
+  background: #fff;
+  color: #222;
+
+  text-transform: capitalize;
+}
+.popup .popup-content h3 { font-size: 1em; }
+/* The popup arrow*/
+.popup .popup-content:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+/* Popup header */
+.popup-option {
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #000;
+}
+.popup-option .fa-toggle-off {
+  font-size: 20px;
+  color: grey;
+}
