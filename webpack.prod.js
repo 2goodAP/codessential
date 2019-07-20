@@ -18,7 +18,7 @@ module.exports = merge(common, {
             new OptimizeCssAssetsPlugin(),
             new TerserPlugin(),
             new HtmlWebpackPlugin({
-                template: 'src/boilerplate.html',
+                template: 'src/editor.html',
                 minify: {
                     collapseWhitespace: true,
                     removeComments: true,

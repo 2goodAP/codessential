@@ -1,5 +1,5 @@
-@import '../../node_modules/codemirror/theme/railscasts.css';
-@import '../../node_modules/codemirror/theme/mdn-like.css';
+@import '../../../node_modules/codemirror/theme/railscasts.css';
+@import '../../../node_modules/codemirror/theme/mdn-like.css';
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
 
 body { color: #fff; background-color: #20262e; }

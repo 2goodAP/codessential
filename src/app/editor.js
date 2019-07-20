@@ -31,6 +31,7 @@ compileWorker.addEventListener('message', event => {
     if (output.startsWith('Error')) {
         let errStart = output.indexOf('\n') + 1;
         let errEnd = output.indexOf('at');
+        // if errEnd doesn't have 'at' use output.length
         errEnd = errEnd > -1 ? errEnd : output.length;
 
         outputNode.style.color = 'red';

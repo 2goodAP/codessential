@@ -9,6 +9,7 @@ createServer((req, res) => {
 
     if (req.method === 'POST') {
         if (pathname === '/runcode') {
+            console.log('received request')
             createCodeFile(req, err => console.error(err));
             sendOutput(res, err => console.error(err));
         }
@@ -35,12 +36,12 @@ function createCodeFile(req, callback) {
 
 function sendOutput(res, callback) {
     res.writeHead(200, {
-        'Access-Control-Allow-Origin': 'http://localhost:8080',
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'text/plain'
     });
     let nodeOnCode = execFile('node', ['codeFile.js'], {timeout: 500},
         (err, stdout, stderr) => {
-            if (err) callback(err);
+            if (err) return callback(err);
 
             console.log(stderr, stdout)
             if (stderr) res.write('Error: ' + stderr);

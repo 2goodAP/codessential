@@ -10,6 +10,7 @@
     addEventListener('message', msg => {
         xhr.open('POST',
             `http://localhost:8000/runcode?${new Date().getTime()}`);
+        // The query string is to 'bust the xhr request cache'
 
         xhr.setRequestHeader('Accept', 'text/plain');
         xhr.setRequestHeader('Content-Type', 'text/plain');
