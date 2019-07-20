@@ -9,7 +9,6 @@ createServer((req, res) => {
 
     if (req.method === 'POST') {
         if (pathname === '/runcode') {
-            console.log('received request')
             createCodeFile(req, err => console.error(err));
             sendOutput(res, err => console.error(err));
         }
@@ -41,9 +40,9 @@ function sendOutput(res, callback) {
     });
     let nodeOnCode = execFile('node', ['codeFile.js'], {timeout: 500},
         (err, stdout, stderr) => {
-            if (err) return callback(err);
+            if (err) callback(err);
 
-            console.log(stderr, stdout)
+            console.log('stderr:', stderr, 'stdout:', stdout)
             if (stderr) res.write('Error: ' + stderr);
             res.write(stdout);
         }

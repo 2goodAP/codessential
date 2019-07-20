@@ -1,3 +1,1 @@
-'use strict';
-console.log('Man ma xa guacomole bajini ko lado')
-console.log(this.that)
+console.log(2 + 3 + 4 + 6 + moojey)

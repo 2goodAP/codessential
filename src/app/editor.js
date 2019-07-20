@@ -28,6 +28,7 @@ let compileWorker = new Worker('./compile_worker.js');
 
 compileWorker.addEventListener('message', event => {
     let output = event.data;
+    console.log(output);
     if (output.startsWith('Error')) {
         let errStart = output.indexOf('\n') + 1;
         let errEnd = output.indexOf('at');
