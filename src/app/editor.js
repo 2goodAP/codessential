@@ -1,12 +1,12 @@
 const CodeMirror = require('codemirror');
-import '../../node_modules/codemirror/lib/codemirror.css';
-import '../../node_modules/codemirror/addon/hint/show-hint.css';
-import '../../node_modules/codemirror/mode/javascript/javascript';
-import '../../node_modules/codemirror/addon/hint/show-hint';
-import '../../node_modules/codemirror/addon/hint/javascript-hint';
-import '../../node_modules/codemirror/addon/edit/closebrackets';
-import '../../node_modules/codemirror/addon/edit/matchbrackets';
-import '../public/css/main.css';
+import '/codemirror.css';
+import '/show-hint.css';
+import '/javascript/javascript';
+import '/show-hint';
+import '/javascript-hint';
+import '/closebrackets';
+import '/matchbrackets';
+import '/css/main.css';
 
 let codeditor = document.querySelector('.codeditor');
 let outputNode = document.querySelector('.output');
@@ -24,7 +24,7 @@ export let editor = CodeMirror.fromTextArea(codeditor, {
 
 
 // Compiling and running the .js file
-let compileWorker = new Worker('./compile_worker.js');
+let compileWorker = new Worker('../../public/js/compile_worker.js');
 
 compileWorker.addEventListener('message', event => {
     let output = event.data;
