@@ -1,12 +1,23 @@
 {
   "name": "codessential",
   "version": "1.0.0",
-  "description": "",
+  "description": "An elegant online IDE",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js --open"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2goodAP/codessential.git"
+  },
+  "keywords": [
+    "js",
+    "IDE",
+    "codemirror"
+  ],
   "author": "",
   "license": "GPL-3.0-or-later",
   "bugs": {

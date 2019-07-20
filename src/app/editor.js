@@ -6,7 +6,7 @@ import '../../node_modules/codemirror/addon/hint/show-hint';
 import '../../node_modules/codemirror/addon/hint/javascript-hint';
 import '../../node_modules/codemirror/addon/edit/closebrackets';
 import '../../node_modules/codemirror/addon/edit/matchbrackets';
-import '../css/main.css';
+import '../public/css/main.css';
 
 let codeditor = document.querySelector('.codeditor');
 let outputNode = document.querySelector('.output');

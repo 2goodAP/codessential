@@ -30,7 +30,7 @@ module.exports = merge(common, {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/boilerplate.html'
+            template: 'src/editor.html'
         })
     ]
 });
