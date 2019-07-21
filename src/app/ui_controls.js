@@ -1,4 +1,4 @@
-import '/all.min';
+import '../../node_modules/@fortawesome/fontawesome-free/js/all.min';
 import {editor} from './editor';
 
 // Show popup menus
